@@ -27,7 +27,7 @@
 
 1. Se carga el archivo CSV de datos en un DataFrame de pandas.
 2. Se agrega una columna llamada 'WEEKDAY' al DataFrame, que representa el nombre del día de la semana para cada fecha.
-3. Se define una lista de días feriados en Panamá para el año 2023.
+3. Se define una lista de días feriados en Panamá.
 4. Se inicializan las listas para almacenar los datos calculados: 'medidor_', 'dia_', 'horario_', 'consumo_', 'bloque_', y 'demanda_max_'.
 5. Para cada medidor y cada día en el DataFrame:
     - Se realiza la verificación de los bloques horarios según el día de la semana o si es un día feriado.
@@ -36,8 +36,9 @@
     - Se calcula el consumo restando el valor máximo y mínimo de la columna 'KWHDEL_ACUM'.
     - Se registra la demanda máxima de la columna 'KWDEL'.
     - Se registran los datos en las listas correspondientes.
-6. Se crea un nuevo DataFrame llamado 'tabla_de_datos' utilizando las listas con los datos calculados.
-7. Se guarda el DataFrame en un archivo Excel.
+6. Se crea un nuevo DataFrame utilizando las listas con los datos calculados.
+7. Se crea un pivot table  con el DataFrame obtendio. 
+8. Se guarda el DataFrame en un archivo Excel.
 
 ## Salida
 
